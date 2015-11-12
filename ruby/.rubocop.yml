@@ -107,6 +107,10 @@ Style/ParallelAssignment:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#parallel-assignment'
   Enabled: false
 
+# Justification to remove this is for flow control purposes (e.g. render(...) and return)
+Style/AndOr:
+  Enabled: false
+
 #################### Metrics ################################
 
 Metrics/LineLength:
@@ -119,7 +123,7 @@ Metrics/ParameterLists:
   Description: 'Avoid parameter lists longer than three or four parameters.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#too-many-params'
   Enabled: true
-  Max: 4
+  Max: 5
 
 Metrics/AbcSize:
   Description: >-
@@ -240,4 +244,3 @@ Performance/StringReplacement:
                   you are deleting characters.
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#stringgsub-vs-stringtr-code'
   Enabled: false
-
