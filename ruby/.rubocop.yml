@@ -110,12 +110,6 @@ Metrics/CyclomaticComplexity:
                  of test cases needed to validate a method.
   Enabled: false
 
-Metrics/PerceivedComplexity:
-  Description: >-
-                 A complexity metric geared towards measuring complexity for a
-                 human reader.
-  Enabled: false
-
 
 #################### Lint ################################
 
