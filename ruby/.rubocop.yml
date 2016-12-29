@@ -104,10 +104,6 @@ Metrics/AbcSize:
   Reference: 'http://c2.com/cgi/wiki?AbcMetric'
   Enabled: false
 
-Metrics/ModuleLength:
-  Description: 'Avoid modules longer than 100 lines of code.'
-  Enabled: false
-
 Metrics/CyclomaticComplexity:
   Description: >-
                  A complexity metric that is strongly correlated to the number
