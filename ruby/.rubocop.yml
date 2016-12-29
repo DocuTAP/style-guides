@@ -13,10 +13,6 @@ Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
   Enabled: false
 
-Style/EmptyLines:
-  Description: "Don't use several empty lines in a row."
-  Enabled: false
-
 # While our style guide says to do this, RuboCop would flag zip codes in specs
 # if we enabled this cop. We don't want to add underscores to zip codes.
 Style/NumericLiterals:
