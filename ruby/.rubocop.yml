@@ -71,11 +71,6 @@ Style/ClassCheck:
   Description: 'Enforces consistent use of `Object#is_a?` or `Object#kind_of?`.'
   Enabled: false
 
-Style/GuardClause:
-  Description: 'Check for conditionals that can be replaced with guard clauses'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-nested-conditionals'
-  Enabled: false
-
 Style/ParallelAssignment:
   Description: >-
                   Check for simple usages of parallel assignment.
