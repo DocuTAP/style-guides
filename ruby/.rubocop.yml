@@ -139,10 +139,6 @@ Lint/ShadowingOuterLocalVariable:
                  for block arguments or block local variables.
   Enabled: false
 
-Lint/UnderscorePrefixedVariableName:
-  Description: 'Do not use prefix `_` for a variable that is used.'
-  Enabled: false
-
 Lint/UnusedBlockArgument:
   Description: 'Checks for unused block arguments.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#underscore-unused-vars'
