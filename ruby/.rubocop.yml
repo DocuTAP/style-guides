@@ -13,10 +13,6 @@ Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
   Enabled: false
 
-Style/EmptyLines:
-  Description: "Don't use several empty lines in a row."
-  Enabled: false
-
 # While our style guide says to do this, RuboCop would flag zip codes in specs
 # if we enabled this cop. We don't want to add underscores to zip codes.
 Style/NumericLiterals:
@@ -52,16 +48,6 @@ Style/RegexpLiteral:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-r'
   Enabled: false
 
-Style/DoubleNegation:
-  Description: 'Checks for uses of double negation (!!).'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-bang-bang'
-  Enabled: false
-
-Style/GuardClause:
-  Description: 'Check for conditionals that can be replaced with guard clauses'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-nested-conditionals'
-  Enabled: false
-
 Style/InfiniteLoop:
   Description: 'Use Kernel#loop for infinite loops.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#infinite-loop'
@@ -81,22 +67,8 @@ Style/EmptyLinesAroundModuleBody:
   Description: 'Disallow empty lines around module body.'
   Enabled: false
 
-Style/AccessorMethodName:
-  Description: 'Check the naming of accessor methods for get_/set_.'
-  Enabled: false
-
 Style/ClassCheck:
   Description: 'Enforces consistent use of `Object#is_a?` or `Object#kind_of?`.'
-  Enabled: false
-
-Style/ClassVars:
-  Description: 'Avoid the use of class variables.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-class-vars'
-  Enabled: false
-
-Style/GuardClause:
-  Description: 'Check for conditionals that can be replaced with guard clauses'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-nested-conditionals'
   Enabled: false
 
 Style/ParallelAssignment:
@@ -123,7 +95,7 @@ Metrics/ParameterLists:
   Description: 'Avoid parameter lists longer than three or four parameters.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#too-many-params'
   Enabled: true
-  Max: 5
+  Max: 3
 
 Metrics/AbcSize:
   Description: >-
@@ -132,24 +104,10 @@ Metrics/AbcSize:
   Reference: 'http://c2.com/cgi/wiki?AbcMetric'
   Enabled: false
 
-Metrics/ClassLength:
-  Description: 'Avoid classes longer than 100 lines of code.'
-  Enabled: false
-
-Metrics/ModuleLength:
-  Description: 'Avoid modules longer than 100 lines of code.'
-  Enabled: false
-
 Metrics/CyclomaticComplexity:
   Description: >-
                  A complexity metric that is strongly correlated to the number
                  of test cases needed to validate a method.
-  Enabled: false
-
-Metrics/PerceivedComplexity:
-  Description: >-
-                 A complexity metric geared towards measuring complexity for a
-                 human reader.
   Enabled: false
 
 
@@ -181,25 +139,10 @@ Lint/ShadowingOuterLocalVariable:
                  for block arguments or block local variables.
   Enabled: false
 
-Lint/StringConversionInInterpolation:
-  Description: 'Checks for Object#to_s usage in string interpolation.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-to-s'
-  Enabled: false
-
-Lint/UnderscorePrefixedVariableName:
-  Description: 'Do not use prefix `_` for a variable that is used.'
-  Enabled: false
-
 Lint/UnusedBlockArgument:
   Description: 'Checks for unused block arguments.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#underscore-unused-vars'
   Enabled: false
-
-Lint/UnusedMethodArgument:
-  Description: 'Checks for unused method arguments.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#underscore-unused-vars'
-  Enabled: false
-
 
 ##################### Performance #############################
 
