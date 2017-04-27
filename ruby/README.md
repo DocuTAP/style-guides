@@ -2127,6 +2127,8 @@ this rule only to arrays with two or more elements.
 
 * Avoid parameter lists longer than three or four parameters.
 
+* Use keyword arguments when serializing parameters from a passed-in hash.
+
 * If you really need "global" methods, add them to Kernel and make them private.
 
 * Use module instance variables instead of global variables.
