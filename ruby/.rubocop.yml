@@ -1,13 +1,12 @@
-Style/Encoding:
-  Description: 'Use UTF-8 as the source file encoding.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#utf-8'
-  EnforcedStyle: when_needed
-  Enabled: true
-
-Style/SpaceInsideHashLiteralBraces:
-  Description: "Use spaces inside hash literal braces - or don't."
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-operators'
-  Enabled: false
+Metrics/BlockLength:
+  CountComments: false  # count full line comments?
+  Max: 25
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'db/**/*.rb'
+    - 'spec/**/*.rb'
+    - 'app/controllers/api/**/*.rb'
 
 Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
@@ -59,14 +58,6 @@ Style/LineEndConcatenation:
                  line end.
   Enabled: false
 
-Style/EmptyLinesAroundClassBody:
-  Description: 'Disallow empty lines around class body.'
-  Enabled: false
-
-Style/EmptyLinesAroundModuleBody:
-  Description: 'Disallow empty lines around module body.'
-  Enabled: false
-
 Style/ClassCheck:
   Description: 'Enforces consistent use of `Object#is_a?` or `Object#kind_of?`.'
   Enabled: false
@@ -81,6 +72,37 @@ Style/ParallelAssignment:
 
 # Justification to remove this is for flow control purposes (e.g. render(...) and return)
 Style/AndOr:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  # Specify the default preferred delimiter for all types with the 'default' key
+  # Override individual delimiters (even with default specified) by specifying
+  # an individual key
+  PreferredDelimiters:
+    default: ()
+    '%i': '()'
+    '%I': '()'
+    '%r': '{}'
+    '%w': '()'
+    '%W': '()'
+
+Style/SingleLineBlockParams:
+  Description: 'Enforces the names of some block params. (e.g. `inject` params must be called `|acc, elem|`)'
+  Enabled: false
+
+#################### Layout ################################
+
+Layout/EmptyLinesAroundClassBody:
+  Description: 'Disallow empty lines around class body.'
+  Enabled: false
+
+Layout/EmptyLinesAroundModuleBody:
+  Description: 'Disallow empty lines around module body.'
+  Enabled: false
+
+Layout/SpaceInsideHashLiteralBraces:
+  Description: "Use spaces inside hash literal braces - or don't."
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-operators'
   Enabled: false
 
 #################### Metrics ################################
